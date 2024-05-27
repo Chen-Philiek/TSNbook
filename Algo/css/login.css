@@ -1,0 +1,146 @@
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.image-container img {
+    margin-top: 30px;
+    max-width: 100px !important;
+    max-height: 100px !important;
+    width: auto !important;
+    height: auto !important;
+}
+
+
+
+.container {
+   
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+@media (max-width: 1400px) {
+    .container {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+
+.container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.container li {
+    margin-bottom: 10px; /* Espacement entre les éléments de la liste */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Style de base du header */
+.header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style de la navbar */
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Ajout */
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Effet de survol sur les liens */
+.navbar ul li a:hover {
+    background-color: #34495e;
+}
+
+/* Style de la boîte de notification */
+.notification-box {
+    position: relative;
+    order: -1; /* Ajout */
+    margin-right: auto; /* Ajout */
+}
+
+.notification-button {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.notification-content {
+    display: none;
+    position: absolute;
+    top: 30px;
+    background-color: #34495e;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn{
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#message {
+    margin-top: 20px;
+    color: red;
+}
