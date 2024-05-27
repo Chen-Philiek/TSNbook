@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Connexion</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/accueil.css">
+</head>
+<body>
+    <header class="header">
+        <!-- page header -->
+        <div class="container3" id="home">
+          <div class="col-12 text-center">
+            <div class="tm-page-header">
+              <i class="fas fa-4x fa-chart-bar mr-4"></i>
+              <h1 class="d-inline-block text-uppercase">TSNbook</h1>
+            </div>
+          </div>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="Accueil.html" >Home</a></li>
+                      
+            </ul>
+        </nav>
+        </header>
+    <div class="image-container">
+        <img src="../img/login.png" alt="Interactive Image">
+    </div>
+    <div class="container" id="loginContainer">
+        <h2>Connexion</h2>
+        <form id="loginForm" method="post" action="../php/connexion.php">
+            <div class="form-group">
+                <label for="username">User Name :</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            
+            <button type="submit" class="btn">Login</button>
+            <button type="button" id="showSignupForm">Sign In</button>
+            <br><br>
+            <div>
+                <a href="forgot_password.html">Forgot password ?</a> <!-- Lien pour réinitialiser le mot de passe -->
+            </div>
+            
+        </form>
+    </div>
+    <div class="container" id="signupContainer" style="display:none;">
+            <hr>
+            <h2>Inscription</h2>
+            <form id="signupForm" method="post" action="../php/signup.php">
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" required>
+                </div>
+                <div class="form-group">
+                    <label for="telephone">Phone number:</label>
+                    <input type="tel" id="telephone" name="telephone" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupUsername">User name:</label>
+                    <input type="text" id="signupUsername" name="signupUsername" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword">Password:</label>
+                    <input type="password" id="signupPassword" name="signupPassword" required>
+                </div>
+                <button type="submit">Sign In</button>
+            </form>
+            <div id="signupMessage"></div>
+            <button type="button" id="backToLogin">Back to login page</button>
+    </div>
+    <script src="../javascript/Graphes.js"></script>
+    <script src="../javascript/connexion.js"></script>
+   
+</body>
+</html>
